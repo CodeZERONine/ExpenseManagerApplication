@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.gusain.expensemanagerapplication.AddExpenseActivity">
+    <include
+        android:id="@+id/app_bar1"
+        layout="@layout/app_bar">
+
+    </include>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:id="@+id/et2"
+        android:hint="              Amount"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="Done"
+        android:onClick="confirm"
+        android:id="@+id/button1"
+        android:layout_below="@+id/editText7"
+        android:layout_centerHorizontal="true" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup1"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        android:layout_below="@+id/app_bar1">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Travelling"
+            android:id="@+id/radioButton"
+            android:checked="true"
+            android:textSize="50dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food"
+            android:id="@+id/radioButton2"
+            android:checked="false"
+            android:textSize="50dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lodging"
+            android:id="@+id/radioButton4"
+            android:checked="false"
+            android:textSize="50dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Miscellaneous"
+            android:id="@+id/radioButton6"
+            android:checked="false"
+            android:textSize="50dp" />
+
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:hint="    DATE:07-01-2016"
+        android:id="@+id/editText"
+        android:layout_below="@+id/et2"
+        android:layout_alignStart="@+id/et2"
+        android:layout_marginTop="50dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="               Trip ID"
+        android:id="@+id/editText7"
+        android:layout_below="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginTop="46dp" />
+
+</RelativeLayout>
